@@ -103,7 +103,8 @@ function CourseDetails() {
 
   const handleBuyCourse = () => {
     if (token) {
-      BuyCourse(token, [courseId], user, navigate, dispatch)
+      // console.log("hello" + courseId)
+      BuyCourse(token, courseId, user, navigate, dispatch)
       return
     }
     setConfirmationModal({
